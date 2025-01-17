@@ -322,15 +322,6 @@ def load_lda_pmfs(num_traces, batch_idx, testing=True, mc_block=0):
             labels[var] = l[batch_idx:(batch_idx+1), :128].reshape(-1)
         else:
             labels[var] = l[batch_idx:(batch_idx + 1), 128:].reshape(-1)
-        # test
-        # labels[var] = labels[var][93:94]
-
-    # pmfs = pmfs[:num_traces, 0, :, :].transpose((0, 2, 1)) # (B, 256, 21)
-    # y_pmfs= y_pmfs[:num_traces, 0, :, :] # (B, 4, 256)
-
-    # test
-    # pmfs = pmfs[93:94, :, :]
-    # y_pmfs = y_pmfs[93:94, :, :]
 
     return pmfs, y_pmfs, labels
 

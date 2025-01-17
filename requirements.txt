@@ -7,3 +7,5 @@ pysdd
 graphviz
 scalib
 tqdm
+gdown
+pyeda
