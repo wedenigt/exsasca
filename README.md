@@ -13,3 +13,15 @@ and install the required packages:
 ```bash
 pip install -r requirements.txt
 ```
+
+To download the compiled SDD (about 1GB in size), you can run the following command:
+```bash
+cd compilation
+python ./download_sdd.py
+```
+
+To compile the SDD yourself, you can run the following command:
+```bash
+cd compilation
+./run_compilation.sh
+```
