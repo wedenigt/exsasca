@@ -1,0 +1,97 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the software (this file) and the paper listed under 'preferred-citation'."
+
+title: "ExSASCA: Exact Soft Analytical Side-Channel Attacks using Tractable Circuits"
+type: software
+version: "1.0.0"
+date-released: "2026-09-28"
+
+authors:
+  - given-names: "Thomas"
+    family-names: "Wedenig"
+    orcid: "https://orcid.org/0009-0006-3061-6887"
+    email: "thomas.wedenig@tugraz.at"
+    affiliation: "Institute of Machine Learning and Neural Computation, Graz University of Technology, Graz, Austria"
+  - given-names: "Rishub"
+    family-names: "Nagpal"
+    orcid: "https://orcid.org/0000-0003-2756-2065"
+    affiliation: "Institute of Applied Information Processing and Communications, Graz University of Technology, Graz, Austria"
+  - given-names: "Gaëtan"
+    family-names: "Cassiers"
+    orcid: "https://orcid.org/0000-0001-5426-9345"
+    affiliation: "Institute of Information and Communication Technologies, Electronics and Applied Mathematics (ICTEAM), UCLouvain, Ottignies-Louvain-la-Neuve, Belgium"
+  - given-names: "Stefan"
+    family-names: "Mangard"
+    orcid: "https://orcid.org/0000-0001-9650-8041"
+    affiliation: "Institute of Applied Information Processing and Communications, Graz University of Technology, Graz, Austria"
+  - given-names: "Robert"
+    family-names: "Peharz"
+    orcid: "https://orcid.org/0000-0002-8644-9655"
+    affiliation: "Institute of Machine Learning and Neural Computation, Graz University of Technology, Graz, Austria"
+
+abstract: >
+  Experimental code for ExSASCA, a fast and exact probabilistic inference method for
+  soft analytical side-channel attacks (SASCA) on the Advanced Encryption Standard (AES),
+  based on knowledge compilation and tractable probabilistic circuits. The repository
+  contains the CNF encoding and SDD compilation pipeline for the AES MixColumns
+  operation, the ExSASCA inference implementation, and the scripts reproducing the
+  experiments of the accompanying ICML 2024 paper. Developed with funding from the NEO
+  project (Next Generation Molecular Data Storage), Horizon Europe / EIC Pathfinder
+  Challenges grant agreement No 101115317.
+
+license: AGPL-3.0-only
+
+repository-code: "https://github.com/wedenigt/exsasca"
+
+keywords:
+  - side-channel analysis
+  - SASCA
+  - AES
+  - knowledge compilation
+  - sentential decision diagram
+  - probabilistic circuits
+  - tractable probabilistic inference
+  - belief propagation
+  - NEO
+  - Next Generation Molecular Data Storage
+  - Horizon Europe
+  - "101115317"
+
+preferred-citation:
+  type: conference-paper
+  title: "Exact Soft Analytical Side-Channel Attacks using Tractable Circuits"
+  year: 2024
+  collection-title: "Proceedings of the 41st International Conference on Machine Learning (ICML)"
+  collection-type: proceedings
+  conference:
+    name: "41st International Conference on Machine Learning (ICML 2024)"
+    city: "Vienna"
+    country: "AT"
+  publisher:
+    name: "PMLR"
+  authors:
+    - given-names: "Thomas"
+      family-names: "Wedenig"
+      orcid: "https://orcid.org/0009-0006-3061-6887"
+      affiliation: "Graz University of Technology"
+    - given-names: "Rishub"
+      family-names: "Nagpal"
+      orcid: "https://orcid.org/0000-0003-2756-2065"
+      affiliation: "Graz University of Technology"
+    - given-names: "Gaëtan"
+      family-names: "Cassiers"
+      orcid: "https://orcid.org/0000-0001-5426-9345"
+      affiliation: "UCLouvain"
+    - given-names: "Stefan"
+      family-names: "Mangard"
+      orcid: "https://orcid.org/0000-0001-9650-8041"
+      affiliation: "Graz University of Technology"
+    - given-names: "Robert"
+      family-names: "Peharz"
+      orcid: "https://orcid.org/0000-0002-8644-9655"
+      affiliation: "Graz University of Technology"
+  identifiers:
+    - type: other
+      value: "arXiv:2501.13748"
+      description: "arXiv preprint"
+  url: "https://arxiv.org/abs/2501.13748"

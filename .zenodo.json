@@ -1,0 +1,70 @@
+{
+  "upload_type": "software",
+  "title": "ExSASCA: Exact Soft Analytical Side-Channel Attacks using Tractable Circuits",
+  "version": "1.0.0",
+  "language": "eng",
+  "access_right": "open",
+  "license": "agpl-3.0-only",
+  "description": "<p>Experimental code for <strong>ExSASCA</strong>, a fast and exact probabilistic inference method for soft analytical side-channel attacks (SASCA) on the Advanced Encryption Standard (AES), based on knowledge compilation and tractable probabilistic circuits.</p><p>The state-of-the-art SASCA uses physical leakage information to make probabilistic predictions about intermediate computations and combines these guesses with the known algorithmic logic to compute the posterior distribution over the key. This attack is commonly performed via loopy belief propagation, which lacks guarantees in terms of convergence and inference quality. ExSASCA instead performs exact inference by compiling the AES MixColumns relation into a Sentential Decision Diagram (SDD). When attacking AES, ExSASCA outperforms SASCA by more than 31% top-1 success rate absolute, at little more computational cost, and about 3 orders of magnitude less than exact inference via exhaustive enumeration.</p><p>This archive contains the CNF encoding and SDD compilation pipeline for AES MixColumns, the ExSASCA inference implementation, the compiled SDD artifacts, and the scripts reproducing the experiments of the accompanying ICML 2024 paper.</p><p><strong>Acknowledgement:</strong> This project has received funding from the European Union's EIC Pathfinder Challenges 2022 programme under grant agreement No 101115317 (NEO, Next Generation Molecular Data Storage). Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or European Innovation Council. Neither the European Union nor the European Innovation Council can be held responsible for them.</p>",
+  "creators": [
+    {
+      "name": "Wedenig, Thomas",
+      "affiliation": "Institute of Machine Learning and Neural Computation, Graz University of Technology, Graz, Austria",
+      "orcid": "0009-0006-3061-6887"
+    },
+    {
+      "name": "Nagpal, Rishub",
+      "affiliation": "Institute of Applied Information Processing and Communications, Graz University of Technology, Graz, Austria",
+      "orcid": "0000-0003-2756-2065"
+    },
+    {
+      "name": "Cassiers, Gaëtan",
+      "affiliation": "ICTEAM, UCLouvain, Ottignies-Louvain-la-Neuve, Belgium",
+      "orcid": "0000-0001-5426-9345"
+    },
+    {
+      "name": "Mangard, Stefan",
+      "affiliation": "Institute of Applied Information Processing and Communications, Graz University of Technology, Graz, Austria",
+      "orcid": "0000-0001-9650-8041"
+    },
+    {
+      "name": "Peharz, Robert",
+      "affiliation": "Institute of Machine Learning and Neural Computation, Graz University of Technology, Graz, Austria",
+      "orcid": "0000-0002-8644-9655"
+    }
+  ],
+  "keywords": [
+    "side-channel analysis",
+    "SASCA",
+    "AES",
+    "knowledge compilation",
+    "sentential decision diagram",
+    "probabilistic circuits",
+    "tractable probabilistic inference",
+    "belief propagation",
+    "NEO",
+    "Next Generation Molecular Data Storage",
+    "Horizon Europe",
+    "101115317"
+  ],
+  "grants": [
+    {
+      "id": "10.13039/501100000780::101115317"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "arXiv:2501.13748",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-conferencepaper",
+      "scheme": "arxiv"
+    },
+    {
+      "identifier": "https://github.com/wedenigt/exsasca",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    }
+  ],
+  "notes": "This project has received funding from the European Union's EIC Pathfinder Challenges 2022 programme under grant agreement No 101115317 (NEO, Next Generation Molecular Data Storage), coordinated through the European Innovation Council and SMEs Executive Agency (EISMEA). Project duration: 1 October 2023 - 30 September 2026. Call: HORIZON-EIC-2022-PATHFINDERCHALLENGES-01, topic HORIZON-EIC-2022-PATHFINDERCHALLENGES-01-05. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or European Innovation Council. Neither the European Union nor the European Innovation Council can be held responsible for them.\n\nThis archive bundles third-party code: the pypsdd/ directory is derived from PyPSDD by Arthur Choi (https://github.com/art-ai/pypsdd), licensed under the Apache License 2.0; bin/sdd-linux is the SDD compiler binary from the UCLA Automated Reasoning Group."
+}

@@ -1,0 +1,5 @@
+# Keep IDE and release tooling out of `git archive` / GitHub release tarballs
+# and out of the Zenodo bundle built by make_zenodo_bundle.sh.
+.idea/              export-ignore
+.gitattributes      export-ignore
+make_zenodo_bundle.sh export-ignore
